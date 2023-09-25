@@ -29,3 +29,29 @@ body {
     background-color: var(--Ice-White);
     color: var(--Ocean-Marine);
 }
+
+
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+input {
+    border-radius: 2em;
+    padding: .6em 1.5em;
+    border: none;
+    outline: none;
+}
+
+label {
+    padding-right: 10px;
+}

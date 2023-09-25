@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teach this Tech |</title>
-    <link rel="stylesheet" href="./src/style/main.css" />
-</head>
-<body class="theme-light">
-    <main class="">
-        <h1 id="theme-toggle">Change Theme</h1>
-    </main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Teach this Tech |</title>
+        <link rel="stylesheet" href="./src/style/main.css" />
+    </head>
+    <body class="theme-light">
+        <main class="">
+            <h1 id="theme-toggle">Change Theme</h1>
+        </main>
 
-    <script src="./src/script.js"></script>
-</body>
+        <form id="form-example" class="form-example">
+            <div class="form-example">
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-example">
+                <label for="email">Enter your email: </label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-example">
+                <label for="email">Notify: </label>
+                <input type="checkbox" name="notify" id="notify" />
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Subscribe!" />
+            </div>
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="module" src="./src/script.js">
+            import axios from 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.mjs';
+        </script>
+    </body>
 </html>

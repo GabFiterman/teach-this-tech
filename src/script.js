@@ -13,3 +13,36 @@ themeToggle.addEventListener('click', () => {
         val = 1;
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const meuFormulario = document.getElementById('form-example');
+
+    meuFormulario.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const notify = document.getElementById('notify').checked;
+
+        const data = {
+            name: name,
+            email: email,
+            notify: notify,
+        };
+
+        const customAxios = axios.create({
+            baseURL: 'http://localhost:3035'
+        });
+        
+        customAxios
+            .post('/save-data', data)
+            .then((response) => {
+                console.log(response.data);
+                alert('Dados enviados com sucesso!');
+            })
+            .catch((error) => {
+                alert('Erro ao salvar os dados!');
+                throw new Error('Erro ao salvar os dados', error);
+            });
+    });
+});
