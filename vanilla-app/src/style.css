@@ -1,0 +1,15 @@
+:root {
+    --color-background: #1B1C31;
+    --color-primary: #FC34EF;
+    --color-secondary: #11F5F1;
+    --color-text: #FFFAFE;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'ubuntu mono', monospace;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
