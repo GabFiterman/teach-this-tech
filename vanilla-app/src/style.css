@@ -24,7 +24,18 @@ section {
     justify-content: center;
 }
 
+.body-text {
+    PADDING: 0 2.75em;
+}
+
 .custom-stroke {
     color: transparent;
     -webkit-text-stroke: 2px var(--color-primary);
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
