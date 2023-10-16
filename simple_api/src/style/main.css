@@ -1,0 +1,85 @@
+@import url('./_variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+body {
+    min-height: 350vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root .theme-light {
+    background: var(--L-background-image) var(--L-color-background) center right no-repeat fixed;
+    background-blend-mode: var(--L-background-blend-mode);
+    color: var(--L-color-text);
+}
+
+:root .theme-dark {
+    background: var(--D-background-image) var(--D-color-background) scroll;
+    background-blend-mode: var(--D-background-blend-mode);
+    color: var(--D-color-text);
+}
+
+#theme-toggle {
+    cursor: pointer;
+    padding: 1rem;
+    max-width: max-content;
+}
+
+
+#theme-toggle:hover {
+    background-color: var(--Ice-White);
+    color: var(--Ocean-Marine);
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+#message-success,
+#message-error {
+    /* display: none; */
+    font-weight: bold;
+    padding: 0.45em 1em;
+    border-radius: .35em;
+    color: aliceblue;
+}
+
+.hidden {
+    display: none;
+}
+
+#message-success {
+    background-color: green;
+}
+
+#message-error {
+    background-color: darkred;
+}
+
+
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+input {
+    border-radius: 2em;
+    padding: .6em 1.5em;
+    border: none;
+    outline: none;
+}
+
+label {
+    padding-right: 10px;
+}
