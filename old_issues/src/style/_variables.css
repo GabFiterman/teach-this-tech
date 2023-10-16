@@ -15,7 +15,7 @@
     --L-color-text: var(--Ocean-Marine);
     --L-color-highlight: var(--Sweet-Orange);
     --L-color-background: var(--Light-Salmon);
-    --L-background-image: url('/public/background/light-theme-background.webp');
+    --L-background-image: url('../../public/background/light-theme-background.webp');
     --L-background-blend-mode: lighten;
 }
 
@@ -24,6 +24,6 @@
     --D-color-text: var(--Ice-White);
     --D-color-highlight: var(--Sweet-Orange);
     --D-color-background: var(--Slow-Blue);
-    --D-background-image: url('/public/background/dark-theme-background.jpg');
+    --D-background-image: url('../../public/background/dark-theme-background.webp');
     --D-background-blend-mode: lighten;
 }
