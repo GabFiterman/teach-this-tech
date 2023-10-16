@@ -25,7 +25,7 @@ section {
 }
 
 .body-text {
-    PADDING: 0 2.75em;
+    padding: 0 2.75em;
 }
 
 .custom-stroke {
@@ -38,4 +38,13 @@ section {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.column-count {
+    font-size: 1.25em
+}
+
+.column-count {
+    column-count: 3;
+    column-gap: 4em;
 }
