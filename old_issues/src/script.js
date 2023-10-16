@@ -1,5 +1,8 @@
 const themeToggle = document.getElementById('theme-toggle');
 const bodyClass = document.body.classList;
+const messageSuccess = document.getElementById('message-success');
+const messageError = document.getElementById('message-error');
+
 let val;
 
 themeToggle.addEventListener('click', () => {
@@ -23,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const notify = document.getElementById('notify').checked;
+        const notifyTimer = 2500;
 
         const data = {
             name: name,
@@ -31,17 +35,26 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         const customAxios = axios.create({
-            baseURL: 'http://localhost:3035'
+            baseURL: 'http://localhost:3035',
         });
-        
+
         customAxios
             .post('/save-data', data)
             .then((response) => {
                 console.log(response.data);
-                alert('Dados enviados com sucesso!');
+
+                messageSuccess.classList.remove('hidden');
+
+                setTimeout(() => {
+                    messageSuccess.classList.add('hidden');
+                }, notifyTimer);
             })
             .catch((error) => {
-                alert('Erro ao salvar os dados!');
+                messageError.classList.remove('hidden');
+
+                setTimeout(() => {
+                    messageError.classList.add('hidden');
+                }, notifyTimer);
                 throw new Error('Erro ao salvar os dados', error);
             });
     });

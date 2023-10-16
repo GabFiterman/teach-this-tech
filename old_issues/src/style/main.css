@@ -30,6 +30,34 @@ body {
     color: var(--Ocean-Marine);
 }
 
+.message-box {
+    display: flex;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+#message-success,
+#message-error {
+    /* display: none; */
+    font-weight: bold;
+    padding: 0.45em 1em;
+    border-radius: .35em;
+    color: aliceblue;
+}
+
+.hidden {
+    display: none;
+}
+
+#message-success {
+    background-color: green;
+}
+
+#message-error {
+    background-color: darkred;
+}
+
 
 form.form-example {
     display: table;

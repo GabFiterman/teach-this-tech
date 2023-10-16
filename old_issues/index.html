@@ -6,7 +6,7 @@
         <title>Teach this Tech |</title>
         <link rel="stylesheet" href="./src/style/main.css" />
     </head>
-    <body class="theme-light">
+    <body class="theme-dark">
         <main class="">
             <h1 id="theme-toggle">Change Theme</h1>
         </main>
@@ -22,12 +22,17 @@
             </div>
             <div class="form-example">
                 <label for="email">Notify: </label>
-                <input type="checkbox" name="notify" id="notify" />
+                <input type="checkbox" placeholder="false" name="notify" id="notify" />
             </div>
             <div class="form-example">
                 <input type="submit" value="Subscribe!" />
             </div>
         </form>
+
+        <div class="message-box">
+            <p id="message-success" class="hidden">Usuário inserido com sucesso</p>
+            <p id="message-error" class="hidden">ERRO: usuário não inserido!</p>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script type="module" src="./src/script.js">
