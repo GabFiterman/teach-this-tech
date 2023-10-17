@@ -13,3 +13,38 @@ body {
     margin: 0;
     padding: 0;
 }
+
+h1 {
+    font-size: 4em;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-text {
+    padding: 0 2.75em;
+}
+
+.custom-stroke {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--color-primary);
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.column-count {
+    font-size: 1.25em
+}
+
+.column-count {
+    column-count: 3;
+    column-gap: 4em;
+}
